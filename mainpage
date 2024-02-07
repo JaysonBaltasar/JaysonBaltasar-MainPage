@@ -1,0 +1,73 @@
+header
+
+import '../App.css'
+
+function header(){
+    return(
+        <div className='header'>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    )
+}
+
+export default header;
+
+red
+import '../App.css'
+
+function Left(){
+    return(
+        <div className='left'>
+            <h2>LEFT SIDEBAR</h2>
+        </div>
+    )
+}
+
+export default Left;
+
+mainpage
+import '../App.css'
+
+function header(){
+    return(
+        <div className='main'>
+            <h3>This is the main content</h3>
+            </div>
+    )
+}
+
+export default header;
+
+top and bot container
+import '../App.css'
+function Right() {
+    return (
+        <div className='right'>
+            <div className='top'>
+                <h4>TOP CONTAINER</h4>
+            </div>  
+            <div className='below'>
+                <h5>BELOW CONTAINER</h5>
+            </div>
+        </div>
+    )
+}
+
+
+export default Right;
+
+main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Son from './Components/Son';
+import Header from './Components/Header';
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Son />
+    <Header />
+  </React.StrictMode>,
+)
